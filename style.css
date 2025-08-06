@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+body{
+    background-color: #222;
+    cursor: none;
+}
+
+.cursor:before{
+    content: '';
+    position: absolute;
+    height: 35vw;
+    width: 34vw;
+    opacity: .4;
+    border-radius: 50%;
+    transform: translate(-30%,-30%);
+}
+.cursor-outline{
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid rgb(29, 63, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cursor {
+    background: cyan;
+    height: 15px;
+    width: 15px;
+}
+.cursor,
+.cursor-outline{
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(-50%,-50%);
+    animation: color 7s linear infinite;
+    pointer-events: none;
+}
+@keyframes color{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
