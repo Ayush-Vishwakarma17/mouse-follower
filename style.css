@@ -50,3 +50,12 @@ body{
         filter: hue-rotate(360deg);
     }
 }
+
+@media (max-width: 768px) {
+    .cursor{
+        margin: 20rem 15rem;
+    }
+    .cursor-outline{
+        margin: 20rem 15rem;
+    }
+}
