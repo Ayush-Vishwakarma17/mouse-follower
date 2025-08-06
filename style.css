@@ -53,9 +53,9 @@ body{
 
 @media (max-width: 768px) {
     .cursor{
-        margin: 20rem 15rem;
+        display: none;
     }
     .cursor-outline{
-        margin: 20rem 15rem;
+        display: none;
     }
 }
